@@ -1,10 +1,10 @@
-import './App.css';
+import { Text } from './components/atoms';
 
 function App() {
    return (
       <div>
          <h1>Code Challenge React Jr.</h1>
-         <p>Inicio prueba...</p>
+         <Text weight="bold">Inicio prueba...</Text>
       </div>
    );
 }
