@@ -1,9 +1,11 @@
-import { Text } from './components/atoms';
+import { Text, Title } from './components/atoms';
 
 function App() {
    return (
       <div>
-         <h1>Code Challenge React Jr.</h1>
+         <Title as="h2" weight="100">
+            Code Challenge React Jr.
+         </Title>
          <Text weight="bold">Inicio prueba...</Text>
       </div>
    );
