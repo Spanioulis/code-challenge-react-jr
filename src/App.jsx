@@ -15,7 +15,7 @@ function App() {
 
    return (
       <FlexBox height="100vh">
-         <Header />
+         <Header title="Code Challenge React Jr." />
 
          {/* TODO -> Añadir spinner */}
          {loading ? (

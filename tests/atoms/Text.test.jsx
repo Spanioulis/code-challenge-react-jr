@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { render, screen } from '../../test-setup.js';
-import { Text } from '../../src/components/atoms/Text.js';
+import { Text } from '../../src/components/atoms';
 
 describe('Text', () => {
    it('renders correctly', () => {

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Text, Title } from '../atoms';
 import { FlexBox, colors, dimensions } from '../../styles';
@@ -11,17 +12,23 @@ const HeaderStyled = styled(FlexBox).attrs({ as: 'header' })`
 
 const LinkStyled = styled(Text).attrs({ as: 'a' })`
    text-decoration: none;
+
+   &:hover {
+      color: ${colors.primary};
+      transition: color 0.7s ease;
+   }
 `;
 
-const Header = () => {
+const Header = ({ title }) => {
    return (
-      <HeaderStyled justify="space-between" direction="row">
+      <HeaderStyled justify="space-between" direction="row" data-testid="header">
          <FlexBox align="flex-start" justify="center">
-            <Title as="h2" weight="100" color={colors.gray.gray4}>
-               Code Challenge React Jr.
+            <Title as="h2" color={colors.gray.gray4}>
+               {title}
             </Title>
          </FlexBox>
-         <FlexBox align="flex-end" justify="center">
+
+         <FlexBox align="center" justify="flex-end" direction="row" gap="1rem">
             <Text weight="100" color={colors.gray.gray3}>
                Sergio Paniagua Sánchez
             </Text>
@@ -36,6 +43,10 @@ const Header = () => {
          </FlexBox>
       </HeaderStyled>
    );
+};
+
+Header.propTypes = {
+   title: PropTypes.string.isRequired
 };
 
 export default Header;
