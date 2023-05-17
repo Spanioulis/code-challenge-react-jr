@@ -1,6 +1,4 @@
-import { colors } from './colors';
-import { dimensions } from './dimensions';
-import { FlexBox } from './FlexBox';
-import { GlobalStyle } from './GlobalStyle';
-
-export { colors, dimensions, FlexBox, GlobalStyle };
+export { colors } from './colors';
+export { dimensions } from './dimensions';
+export { FlexBox } from './FlexBox';
+export { GlobalStyle } from './GlobalStyle';

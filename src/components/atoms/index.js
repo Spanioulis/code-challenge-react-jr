@@ -1,4 +1,2 @@
-import { Text } from './Text';
-import { Title } from './Title';
-
-export { Text, Title };
+export { Text } from './Text';
+export { Title } from './Title';
