@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FlexBox, colors, dimensions } from '../../styles';
+import IconGroup from '../molecules/IconGroup';
 
 const NavbarStyled = styled(FlexBox).attrs({ as: 'nav' })`
    background-color: ${colors.gray.gray1};
@@ -52,11 +53,7 @@ const Navbar = () => {
             </ul>
          </FlexBox>
 
-         <FlexBox direction="row" justify="space-around">
-            <p>Icono</p>
-            <p>Icono</p>
-            <p>Icono</p>
-         </FlexBox>
+         <IconGroup />
       </NavbarStyled>
    );
 };
