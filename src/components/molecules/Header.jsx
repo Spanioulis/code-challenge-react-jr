@@ -6,7 +6,7 @@ import { FlexBox, colors, dimensions } from '../../styles';
 const HeaderStyled = styled(FlexBox).attrs({ as: 'header' })`
    background-color: ${colors.black.black2};
    border-bottom: 1px solid ${colors.gray.gray2};
-   height: 80px;
+   min-height: 80px;
    padding: 0rem ${dimensions.spacing.xl};
 `;
 

@@ -14,7 +14,7 @@ describe('Table', () => {
 
       render(<Table users={users} />);
 
-      expect(screen.getByTestId(/table head/i)).toBeInTheDocument();
+      expect(screen.getByTestId(/table-head/i)).toBeInTheDocument();
 
       users.forEach((user) => {
          expect(screen.getByText(`${user.name.title} ${user.name.first} ${user.name.last}`)).toBeInTheDocument();

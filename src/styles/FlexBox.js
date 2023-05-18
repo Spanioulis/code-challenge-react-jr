@@ -7,7 +7,6 @@ export const FlexBox = styled.div`
    flex-grow: ${({ grow }) => grow || 0};
    flex-wrap: ${({ wrap }) => wrap || 'no-wrap'};
    gap: ${({ gap }) => gap || '0rem'};
-   height: ${({ height }) => height || '100%'};
    justify-content: ${({ justify }) => justify || 'flex-start'};
    width: ${({ w }) => w || '100%'};
 `;

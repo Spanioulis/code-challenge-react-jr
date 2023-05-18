@@ -10,7 +10,7 @@ describe('TableHead', () => {
          </table>
       );
 
-      expect(screen.getByTestId(/table head/i)).toBeInTheDocument();
+      expect(screen.getByTestId(/table-head/i)).toBeInTheDocument();
    });
 
    it('applies correct styles to table header cells', () => {

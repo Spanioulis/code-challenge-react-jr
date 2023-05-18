@@ -1,6 +1,6 @@
-import { FlexBox, colors } from './styles';
+import { FlexBox } from './styles';
 import { useFetch } from './hooks';
-import { Header } from './components/molecules';
+import { Header, Navbar } from './components/molecules';
 import { Users } from './pages';
 
 function App() {
@@ -23,9 +23,7 @@ function App() {
          ) : (
             <>
                <FlexBox direction="row">
-                  {/* Navbar */}
-                  <nav style={{ background: `${colors.gray.gray1}`, width: '230px' }}>{/* Contenido del navbar */}</nav>
-
+                  <Navbar />
                   <Users users={data} />
                </FlexBox>
             </>

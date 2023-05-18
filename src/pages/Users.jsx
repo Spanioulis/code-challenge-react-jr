@@ -5,7 +5,7 @@ import { colors } from '../styles';
 
 const Users = ({ users }) => {
    return (
-      <main style={{ padding: '3.5rem' }}>
+      <main style={{ padding: '2.5rem' }}>
          <Title color={colors.gray.gray1}>Usuarios</Title>
 
          <Table users={users} />

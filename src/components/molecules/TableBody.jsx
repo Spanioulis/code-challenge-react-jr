@@ -24,7 +24,7 @@ const TableBodyStyled = styled.thead`
 
 const TableBody = ({ user }) => {
    return (
-      <TableBodyStyled data-testid="table body">
+      <TableBodyStyled data-testid="table-body">
          <tr>
             <td>
                <img src={user?.picture?.thumbnail} alt={user?.name?.first} />

@@ -10,7 +10,7 @@ describe('TableBody', () => {
          </table>
       );
 
-      expect(screen.getByTestId(/table body/i)).toBeInTheDocument();
+      expect(screen.getByTestId(/table-body/i)).toBeInTheDocument();
    });
 
    it('renders correct content in cells', () => {
