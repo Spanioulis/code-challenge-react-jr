@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { TableBody, TableHead } from '../molecules';
+import { dimensions } from '../../styles';
 
 const TableStyled = styled.table`
    border-collapse: collapse;
    border-spacing: 0;
+   margin-top: ${dimensions.spacing.xl};
 `;
 
 const Table = ({ users }) => {
@@ -13,7 +15,7 @@ const Table = ({ users }) => {
          <TableHead />
 
          {users.map((user) => (
-            <TableBody user={user} key={user.id.value} />
+            <TableBody user={user} key={user?.email} />
          ))}
       </TableStyled>
    );

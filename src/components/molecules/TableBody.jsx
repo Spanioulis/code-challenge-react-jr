@@ -10,27 +10,33 @@ const TableBodyStyled = styled.thead`
       min-width: 75px;
       padding: 0.5rem;
       text-align: left;
+
+      img {
+         border-radius: 100%;
+         box-shadow: 3px 3px 10px ${colors.gray.gray3};
+      }
    }
 `;
 
 const TableBody = ({ user }) => {
-   console.log('user:', user);
    return (
-      <TableBodyStyled>
-         <td>
-            <img src={user.picture.thumbnail} alt={`${user.name.first} photo`} style={{ borderRadius: '100%' }} />
-         </td>
-         <td>{`${user.name.title} ${user.name.first} ${user.name.last}`}</td>
-         <td>{user.gender}</td>
-         <td>{user.dob.date}</td>
-         <td>{user.dob.age}</td>
-         <td>{user.email}</td>
+      <TableBodyStyled data-testid="table body">
+         <tr>
+            <td>
+               <img src={user?.picture?.thumbnail} alt={user?.name?.first} />
+            </td>
+            <td>{`${user?.name?.title} ${user?.name?.first} ${user?.name?.last}`}</td>
+            <td>{user?.gender}</td>
+            <td>{user?.dob?.date}</td>
+            <td>{user?.dob?.age}</td>
+            <td>{user?.email}</td>
+         </tr>
       </TableBodyStyled>
    );
 };
 
 TableBody.propTypes = {
-   user: PropTypes.array
+   user: PropTypes.object
 };
 
 export default TableBody;

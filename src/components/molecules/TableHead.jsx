@@ -15,7 +15,7 @@ const TableHeadStyled = styled.thead`
 
 const TableHead = () => {
    return (
-      <TableHeadStyled>
+      <TableHeadStyled data-testid="table head">
          <tr>
             <th></th>
             <th>Name</th>
