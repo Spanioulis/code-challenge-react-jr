@@ -6,14 +6,18 @@ const TableBodyStyled = styled.thead`
    color: ${colors.gray.gray1};
 
    td {
-      border-bottom: 1px solid ${colors.gray.gray4};
-      min-width: 75px;
       padding: 0.5rem;
       text-align: left;
 
       img {
+         cursor: pointer;
          border-radius: 100%;
          box-shadow: 3px 3px 10px ${colors.gray.gray3};
+
+         &:hover {
+            scale: calc(105%);
+            transition: all 0.2s ease;
+         }
       }
    }
 `;

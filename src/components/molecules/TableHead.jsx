@@ -5,10 +5,13 @@ const TableHeadStyled = styled.thead`
    color: ${colors.gray.gray3};
    font-weight: bold;
 
+   th:not(:first-child) {
+      border-bottom: 1px solid ${colors.gray.gray5};
+   }
+
    tr th {
-      border-bottom: 1px solid ${colors.gray.gray4};
       min-width: 85px;
-      padding-left: 0.5rem;
+      padding: 0.5rem;
       text-align: left;
    }
 `;
