@@ -22,6 +22,12 @@ const TableBodyStyled = styled.thead`
    }
 `;
 
+const dateFormatOption = {
+   year: 'numeric',
+   month: 'long',
+   day: 'numeric'
+};
+
 const TableBody = ({ user, openModal }) => {
    return (
       <TableBodyStyled data-testid="table-body">
@@ -30,8 +36,8 @@ const TableBody = ({ user, openModal }) => {
                <img src={user?.picture?.thumbnail} alt={user?.name?.first} onClick={() => openModal(user)} />
             </td>
             <td>{`${user?.name?.title} ${user?.name?.first} ${user?.name?.last}`}</td>
-            <td>{user?.gender}</td>
-            <td>{user?.dob?.date}</td>
+            <td>{user?.gender === 'female' ? <>fem.</> : <>masc.</>}</td>
+            <td>{new Date(user?.dob?.date).toLocaleDateString('es-ES', dateFormatOption)}</td>
             <td>{user?.dob?.age}</td>
             <td>{user?.email}</td>
          </tr>
