@@ -38,8 +38,12 @@ describe('TableBody', () => {
       );
 
       expect(screen.getByText(`${user.name.title} ${user.name.first} ${user.name.last}`)).toBeInTheDocument();
-      expect(screen.getByText(user.gender)).toBeInTheDocument();
-      expect(screen.getByText(user.dob.date)).toBeInTheDocument();
+      expect(screen.getByText(user.gender === 'female' ? 'fem.' : 'masc.')).toBeInTheDocument();
+      expect(
+         screen.getByText(
+            new Date(user.dob.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })
+         )
+      ).toBeInTheDocument();
       expect(screen.getByText(user.dob.age.toString())).toBeInTheDocument();
       expect(screen.getByText(user.email)).toBeInTheDocument();
    });
