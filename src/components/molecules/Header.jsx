@@ -23,7 +23,7 @@ const Header = ({ title }) => {
    return (
       <HeaderStyled justify="space-between" direction="row" data-testid="header">
          <FlexBox align="flex-start" justify="center">
-            <Title as="h2" color={colors.gray.gray4}>
+            <Title as="h2" color={colors.primary}>
                {title}
             </Title>
          </FlexBox>
@@ -34,7 +34,7 @@ const Header = ({ title }) => {
             </Text>
             <LinkStyled
                color={colors.gray.gray4}
-               href="https://github.com/Spanioulis"
+               href="https://spanioulis.dev"
                target="_blank"
                rel="noreferrer noopener"
             >
