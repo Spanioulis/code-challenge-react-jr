@@ -14,19 +14,16 @@ function App() {
    }
 
    return (
-      <FlexBox height="100vh">
+      <FlexBox>
          <Header title="Code Challenge React Jr." />
-
          {/* TODO -> Añadir spinner */}
          {loading ? (
             <p>Cargando...</p>
          ) : (
-            <>
-               <FlexBox direction="row">
-                  <Navbar />
-                  <Users users={data} />
-               </FlexBox>
-            </>
+            <FlexBox direction="row" style={{ height: '87vh' }}>
+               <Navbar />
+               <Users users={data} />
+            </FlexBox>
          )}
       </FlexBox>
    );
