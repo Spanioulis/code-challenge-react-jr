@@ -29,7 +29,7 @@ const Header = ({ title }) => {
          </FlexBox>
 
          <FlexBox align="center" justify="flex-end" direction="row" gap="1rem">
-            <Text weight="100" color={colors.gray.gray3}>
+            <Text weight="300" color={colors.gray.gray5}>
                Sergio Paniagua Sánchez
             </Text>
             <LinkStyled

@@ -10,6 +10,6 @@ export const GlobalStyle = createGlobalStyle`
 
 body, html {
    background-color: ${({ backgroundColor }) => backgroundColor || colors.gray.gray4};
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: 'Manrope', sans-serif;
 }
 `;
