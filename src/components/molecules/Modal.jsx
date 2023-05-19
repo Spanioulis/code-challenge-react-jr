@@ -66,7 +66,7 @@ const Modal = ({ children, isOpen, toggleModal }) => {
       <ModalBackgroundStyled>
          <ModalWrapper onClick={toggleModal} data-testid="modal-wrapper" />
          <ModalContainerSyled justify="flex-start">
-            <span onClick={toggleModal}>
+            <span onClick={toggleModal} data-testid="outline-close">
                <AiOutlineClose />
             </span>
             <FlexBox>{children}</FlexBox>

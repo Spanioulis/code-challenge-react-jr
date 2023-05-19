@@ -15,6 +15,8 @@ const NavbarStyled = styled(FlexBox).attrs({ as: 'nav' })`
       li {
          background-color: ${colors.gray.gray1};
          border-radius: ${dimensions.borderRadius.base};
+         color: ${colors.gray.gray5};
+         cursor: pointer;
          display: inline-block;
          margin-top: ${dimensions.spacing.xxs};
          padding: ${dimensions.spacing.base};
@@ -36,21 +38,14 @@ const NavbarStyled = styled(FlexBox).attrs({ as: 'nav' })`
 const Navbar = () => {
    return (
       <NavbarStyled justify="space-between">
-         {/* TODO -> Crea componente */}
          <FlexBox justify="center">
             <ul>
                <li>
-                  <a href="">Usuarios</a>
+                  <a href="/">Usuarios</a>
                </li>
-               <li>
-                  <a href="">Ficha usuario</a>
-               </li>
-               <li>
-                  <a href="">Code challenges</a>
-               </li>
-               <li>
-                  <a href="">Ninja</a>
-               </li>
+               <li>Ficha usuario</li>
+               <li>Code challenges</li>
+               <li>Ninja&apos;s</li>
             </ul>
          </FlexBox>
 
