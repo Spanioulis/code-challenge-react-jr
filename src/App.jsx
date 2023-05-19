@@ -1,13 +1,13 @@
-import { FlexBox } from './styles';
 import { useFetch } from './hooks';
-import { Header, Navbar } from './components/molecules';
 import { Users } from './pages';
+import { Navbar } from './components/organisms';
+import { Header } from './components/molecules';
+import { FlexBox } from './styles';
 
 function App() {
    const url = 'https://randomuser.me/api?results=5&noinfo';
 
    const { data, loading } = useFetch(url);
-   console.log('data:', data);
 
    if (loading) {
       return <p>Cargando...</p>;

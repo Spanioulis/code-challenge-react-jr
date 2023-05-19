@@ -9,20 +9,21 @@ const TableStyled = styled.table`
    margin-top: ${dimensions.spacing.xl};
 `;
 
-const Table = ({ users }) => {
+const Table = ({ users, openModal }) => {
    return (
       <TableStyled>
          <TableHead />
 
          {users.map((user) => (
-            <TableBody user={user} key={user?.email} />
+            <TableBody user={user} key={user?.email} openModal={openModal} />
          ))}
       </TableStyled>
    );
 };
 
 Table.propTypes = {
-   users: PropTypes.array
+   users: PropTypes.array,
+   openModal: PropTypes.func
 };
 
 export default Table;

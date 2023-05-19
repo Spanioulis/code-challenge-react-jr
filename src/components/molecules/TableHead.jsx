@@ -21,10 +21,10 @@ const TableHead = () => {
       <TableHeadStyled data-testid="table-head">
          <tr>
             <th></th>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Birthdate</th>
-            <th>Age</th>
+            <th>Nombre</th>
+            <th>Género</th>
+            <th>Fecha nacimiento</th>
+            <th>Edad</th>
             <th>Email</th>
          </tr>
       </TableHeadStyled>

@@ -36,6 +36,7 @@ const NavbarStyled = styled(FlexBox).attrs({ as: 'nav' })`
 const Navbar = () => {
    return (
       <NavbarStyled justify="space-between">
+         {/* TODO -> Crea componente */}
          <FlexBox justify="center">
             <ul>
                <li>

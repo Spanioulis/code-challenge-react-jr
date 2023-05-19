@@ -22,12 +22,12 @@ const TableBodyStyled = styled.thead`
    }
 `;
 
-const TableBody = ({ user }) => {
+const TableBody = ({ user, openModal }) => {
    return (
       <TableBodyStyled data-testid="table-body">
          <tr>
             <td>
-               <img src={user?.picture?.thumbnail} alt={user?.name?.first} />
+               <img src={user?.picture?.thumbnail} alt={user?.name?.first} onClick={() => openModal(user)} />
             </td>
             <td>{`${user?.name?.title} ${user?.name?.first} ${user?.name?.last}`}</td>
             <td>{user?.gender}</td>
@@ -40,7 +40,8 @@ const TableBody = ({ user }) => {
 };
 
 TableBody.propTypes = {
-   user: PropTypes.object
+   user: PropTypes.object,
+   openModal: PropTypes.func
 };
 
 export default TableBody;
