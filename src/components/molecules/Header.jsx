@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Text, Title } from '../atoms';
 import { FlexBox, colors, dimensions } from '../../styles';
+import ninja from '../../assets/ninja.png';
 
 const HeaderStyled = styled(FlexBox).attrs({ as: 'header' })`
    background-color: ${colors.black.black2};
@@ -22,7 +23,8 @@ const LinkStyled = styled(Text).attrs({ as: 'a' })`
 const Header = ({ title }) => {
    return (
       <HeaderStyled justify="space-between" direction="row" data-testid="header">
-         <FlexBox align="flex-start" justify="center">
+         <FlexBox align="center" justify="flex-start" direction="row" gap="1rem">
+            <img src={ninja} alt="Ninja icon" width="50px" />
             <Title as="h2" color={colors.primary}>
                {title}
             </Title>
