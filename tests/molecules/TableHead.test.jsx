@@ -10,7 +10,8 @@ describe('TableHead', () => {
          </table>
       );
 
-      expect(screen.getByTestId(/table-head/i)).toBeInTheDocument();
+      const table = screen.getByTestId(/table-head/i);
+      expect(table).toBeInTheDocument();
    });
 
    it('applies correct styles to table header cells', () => {

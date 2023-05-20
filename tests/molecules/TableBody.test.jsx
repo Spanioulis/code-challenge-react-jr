@@ -10,7 +10,8 @@ describe('TableBody', () => {
          </table>
       );
 
-      expect(screen.getByTestId(/table-body/i)).toBeInTheDocument();
+      const table = screen.getByTestId(/table-body/i);
+      expect(table).toBeInTheDocument();
    });
 
    it('renders correct content in cells', () => {

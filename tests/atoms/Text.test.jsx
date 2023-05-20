@@ -11,7 +11,6 @@ describe('Text', () => {
       );
 
       const text = screen.getByText(/test text/i);
-
       expect(text).toBeInTheDocument();
       expect(text).toHaveStyle({ color: 'green' });
       expect(text).toHaveStyle({ fontSize: '23px' });

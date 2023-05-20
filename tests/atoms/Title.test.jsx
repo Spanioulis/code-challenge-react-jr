@@ -11,7 +11,6 @@ describe('Title', () => {
       );
 
       const title = screen.getByText(/test title/i);
-
       expect(title).toBeInTheDocument();
       expect(title).toHaveStyle({ fontWeight: '100' });
       expect(title).toHaveStyle({ fontSize: '1.5rem' });

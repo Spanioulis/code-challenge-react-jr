@@ -15,7 +15,8 @@ describe('Modal', () => {
          </Modal>
       );
 
-      expect(screen.getByText(/test modal/i)).toBeInTheDocument();
+      const text = screen.getByText(/test modal/i);
+      expect(text).toBeInTheDocument();
    });
 
    it('calls toggleModal function when close icon, background or "Escape" is clicked', () => {

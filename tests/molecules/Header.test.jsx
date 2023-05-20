@@ -7,7 +7,6 @@ describe('Header', () => {
       render(<Header title="Test header" />);
 
       const title = screen.getByText(/test header/i);
-
       expect(title).toBeInTheDocument();
       expect(screen.getByTestId('header')).toBeInTheDocument();
    });
@@ -16,7 +15,6 @@ describe('Header', () => {
       render(<Header title="Test header" />);
 
       const link = screen.getByRole('link', { name: '@Spanioulis' });
-
       expect(link).toBeInTheDocument();
    });
 });
