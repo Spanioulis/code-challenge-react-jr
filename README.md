@@ -1,34 +1,29 @@
-# codechallenge-React-J
+#  Code Challenge React Jr. 🐱‍👤
 
-**CODE CHALLENGE**
+El objetivo es realizar la prueba de React Junior de [Ninja Talent](https://ninjatalent.net/). Al ingresar a la página inicial, se visualiza un encabezado con icono, título proyecto, mis nombres y apellidos y link que redirige a [mi página web](https://spanioulis.dev). En la parte inferior izquierda hay un navbar con cuatro botones (futuras rutas para siguiente versión) y tres iconos que redirigen a mi cuenta de GitHub, Linkedin y correo electrónico.
 
-REQUERIMIENTOS DEL CODE CHALLENGE:
+En la parte diestra de la pantalla (__Usuarios__) se visualiza una tabla con información de cada usuario, como su nombre, género, fecha nacimiento, edad y email. Al clicar en la imagen de cualquier usuario, se abre un modal con información explícita y detallada de dicho usaurio, como dirección, ciudad, código postal, país, teléfono. Para salir del modal se puede hacer click al icono ✖, _Escape_ o clicar fuera del modal.
 
-- Desarrollar los servicios ( RESTful) en React para  conectarse al "backend" https://randomuser.me/api?results=5&noinfo
-- Desarrollar una interfaz que permita listar y ver el detalle de los usuarios.
+## Demo
 
-Se valorará:
+🖐️ [Click aquí](https://challenge-react-jr.vercel.app/)
 
--  Patrones y estilo de desarrollo de front. Buenas prácticas, limpieza del código.
--  Maquetación del proyecto.
+## Descripción
 
-
-**ENTREGA**
-
-El tiempo de desarrollo es de una semana pero mucho mejor si nos lo puedes
-enviar antes.
-
-Se debe entregar:
-
-- Url con la aplicación desplegada.
-- Código fuente.
+Proyecto realizado con React & JavaScript y maquetado con styled-components. Se ha usado Vite por su rapidez de compilación. Enfocado en la versión de escritorio; utilizando Atomic Design (atoms, molecules y organisms) para los componentes, carpeta *page* para la ruta principal ('/'), carpeta *styles* (estilos de la app, con archivos __colors__, __dimensions__, __FlexBox__ y __GlobalStyle__), carpeta *utils* (custom hook __useFetch__), y carpeta *assets* (icono web). En otro nivel de la carpeta *src* se encuentra la carpeta *__tests__*. 
 
 
-**RECUERDA**
+[]()
 
-- La evaluación la realizarán nuestros ninja masters, gente con mucha experiencia.
-- Según tu calificación, recibirás un diploma de ninja
+## Instalación
 
+1. Clona el repositorio en tu equipo: git clone https://github.com/Spanioulis/code-challenge-react-jr.git
+2. Instala las dependencias: `npm install`
+3. Inicia el servidor de desarrollo: `npm run dev`
+4. Abre http://localhost:5173 en tu navegador para ver la aplicación en acción
+
+## Calidad de código
+![]()
 
 
 
