@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { Table } from '../components/organisms';
 import { Modal, ModalContent } from '../components/molecules';
-import { Title } from '../components/atoms';
+import { Spinner, Title } from '../components/atoms';
 import { FlexBox, colors } from '../styles';
 
-const Users = ({ users }) => {
+const Users = ({ users, loading }) => {
    const [isOpen, setIsOpen] = useState(false);
    const [selectedUser, setUserModal] = useState(null);
 
@@ -20,15 +20,14 @@ const Users = ({ users }) => {
          </Modal>
 
          <Title color={colors.gray.gray1}>Usuarios</Title>
-         <FlexBox justify="flex-end">
-            <Table users={users} openModal={openModal} />
-         </FlexBox>
+         <FlexBox justify="flex-end">{loading ? <Spinner /> : <Table users={users} openModal={openModal} />}</FlexBox>
       </main>
    );
 };
 
 Users.propTypes = {
-   users: PropTypes.array
+   users: PropTypes.array,
+   loading: PropTypes.boolean
 };
 
 export default Users;
