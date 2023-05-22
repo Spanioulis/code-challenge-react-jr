@@ -9,22 +9,13 @@ function App() {
 
    const { data, loading } = useFetch(url);
 
-   if (loading) {
-      return <p>Cargando...</p>;
-   }
-
    return (
       <FlexBox>
          <Header title="Code Challenge React Jr." />
-         {/* TODO -> Añadir spinner */}
-         {loading ? (
-            <p>Cargando...</p>
-         ) : (
-            <FlexBox direction="row" style={{ height: '87vh' }}>
-               <Navbar />
-               <Users users={data} />
-            </FlexBox>
-         )}
+         <FlexBox direction="row" style={{ height: '87vh' }}>
+            <Navbar />
+            <Users users={data} loading={loading} />
+         </FlexBox>
       </FlexBox>
    );
 }
